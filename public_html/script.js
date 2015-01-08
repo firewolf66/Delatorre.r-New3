@@ -5,8 +5,9 @@
  */
 
 $("document").ready(function(){
-    $(".Nike").css("background-color","Green");
-    
+    $(".Nike").css("background-color","Gray");
+    $('p:last').css({"background-color": "Red", "color": "white"});
+    $('p:first').css({"background-color": "Green", "color": "white"});
 });
 
 
