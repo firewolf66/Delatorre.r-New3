@@ -5,10 +5,27 @@
  */
 
 $("document").ready(function(){
-    $(".Nike").css("background-color","Gray");
-    $('p:last').css({"background-color": "Red", "color": "white"});
-    $('p:first').css({"background-color": "Green", "color": "white"});
+     $(".Nike").css("background-color","Gray");
+     $('p:last').css({"background-color": "Red", "color": "white"});
+     $('p:first').css({"background-color": "Green", "color": "white"});
+    
+    $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+    
+    //$('div').bind('moseover', mouseOverMe());
+    
+    $('h1').bind('click', mouseClick);
 });
 
+function mouseOverMe() {
+    $("h1"). html("Ramon Loves Soccer");
+}
+
+function mouseOutMe(){
+    $('h1').html('Paris Saint Germain');    
+}
+
+function mouseClick(){
+    $('p').html('Ramon is beast at Soccer');
+}
 
 
