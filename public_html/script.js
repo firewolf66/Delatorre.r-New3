@@ -14,10 +14,18 @@ $("document").ready(function(){
     //$('div').bind('moseover', mouseOverMe());
     
     $('h1').bind('click', mouseClick);
+    
+        $('replaceWHtml').bind('click', replaceWHtml);
+        $('replaceWText').bind('click', replaceWText);
+        
 });
+        function replaceWHtml() {
+            $('')
+        }
+
 
 function mouseOverMe() {
-    $("h1"). html("Ramon Loves Soccer");
+    $("h1"). html("Ramon De La Torre");
 }
 
 function mouseOutMe(){
