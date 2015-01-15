@@ -9,6 +9,8 @@ $("document").ready(function() {
     $('p:last').css({"background-color": "Red", "color": "white"});
     $('p:first').css({"background-color": "Green", "color": "white"});
 
+    $('#superHumans').accordion({header: "h3"});
+
     $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
 
     $('div').bind('moseover', mouseOverMe());
@@ -19,8 +21,8 @@ $("document").ready(function() {
     $('#randPara').bind('click', addAPara);
     $('#removePara').bind('click', removeAPara);
     $('#show').css('visibility', 'hidden');
-        
-    
+
+
 });
 
 function removeAPara() {
